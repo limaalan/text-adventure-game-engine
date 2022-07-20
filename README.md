@@ -14,5 +14,5 @@ You can compile the project by using :
 You can visualize the game routes by using https://dreampuf.github.io/GraphvizOnline/
 Or any kind of graph visualization tool that supports DOT files. 
 
-![example](example_en.png)
+![example](projeto/imgs/example_en.png)
 
