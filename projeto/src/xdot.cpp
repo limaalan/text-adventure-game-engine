@@ -56,6 +56,6 @@ ofstream file;
     cout << "File " << fileName << " successfully generated." << endl;
     cout << "Use graphviz to visualize it. You can test it on http://www.webgraphviz.com/" << endl;
 
-    system( ("xdot " + fileName).c_str() );
+    //system( ("xdot " + fileName).c_str() );
 
 }

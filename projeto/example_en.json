@@ -1,0 +1,85 @@
+[
+  {
+    "id": "TITLE",
+    "title": "TEXT ADVENTURE",
+    "description": "Carlos was an ordinary person, a developer working at Techdine Inc. On a day like any other, Carlos is captured and dropped off at an unknown location. Help him survive and unravel this mystery.",
+    "commands": [
+      {
+        "text": "Start Game",
+        "result": "Welcome",
+        "nexScene": "start"
+      },
+      {
+        "text": "Exit Game",
+        "result": "Until next time...",
+        "nexScene": "EXIT"
+      }
+    ]
+  },
+  {
+    "id": "start",
+    "title": "The Beginning",
+    "description": "Carlos opens his eyes and realizes he's on the floor of a small, dimly lit room. The door seems reinforced. There's a switch on the wall, just in front of Carlos. On the opposite side, there's a window. Under a chair there is a stone.",
+    "commands": [
+      {
+        "text": "Attempt to trigger the switch",
+        "result": "As he approaches the switch, Carlos realizes that the ground is weakened and may give way.",
+        "outcome": "NONE"
+      },
+      {
+        "text": "Knock on window",
+        "result": "The window shattered and several pieces fell on Carlos, who was badly injured and did not survive.",
+        "outcome": "GAMEOVER"
+      },
+      {
+        "text": "Force the door",
+        "result": "The door is tightly closed and reinforced, but the hinges look rusty.",
+        "outcome": "NONE"
+      },
+      {
+        "text": "Pick up stone",
+        "result": "Carlos took the stone and sees some new possibilities.",
+        "outcome": "scene02"
+      }
+    ]
+  },
+  {
+    "id": "scene02",
+    "title": "Still beginning, but with equipment...",
+    "description": "With the stone in hand, Carlos realizes that he can use it as an instrument. The door seems reinforced. There is a switch on the wall, just in front of Carlos. On the opposite side, there is a window. Under the chair there is a stone.",
+    "commands": [
+      {
+        "text": "Hit on the door hinges",
+        "result": "The door gave way and fell on Carlos, who was trapped and starved to death.",
+        "nexScene": "GAMEOVER"
+      },
+      {
+        "text": "Throw the rock at the switch",
+        "result": "Carlos hits the switch with the rock. The door opens and Carlos walks through it.",
+        "nexScene": "GAMEOVER"
+      },
+      {
+        "text": "Throw the rock at the window.",
+        "result": "The window broke and Carlos can get through it.",
+        "nexScene": "GAMEOVER"
+      }
+    ]
+  },
+  {
+    "id": "GAMEOVER",
+    "title": "Game over",
+    "description": "Snake! Talk to me! Snake! SNAAAAKE!!!",
+    "commands": [
+      {
+        "text": "Reset Game",
+        "result": "May the force be with you!",
+        "nexScene": "TITLE"
+      },
+      {
+        "text": "Exit Game",
+        "result": "Until next time...",
+        "nexScene": "EXIT"
+      }
+    ]
+  }
+]

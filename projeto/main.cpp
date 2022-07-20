@@ -5,16 +5,16 @@
 #include "include/xdot.h"
 #include "include/game.h"
 
-
-
 using namespace std;
 
 int main()
 {
     // Game file
+    //string caminho ="example_en.json";
+    //string caminho ="example_ptbr.json";
     string caminho ="game.json";
     Game game=readFromFile(caminho);
-    //motor(game);
+    motor(game);
     show_xDot(game);
 
     return 0;
