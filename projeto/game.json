@@ -1,0 +1,349 @@
+[
+  {
+    "id": "TITULO",
+    "title": "Bem vindo à text adventure 'Aventuras com goblins'",
+    "description": "Como um espadachim sem rumo, você vaga pelo mundo à procura de sangue, fama e espólios. Pelo menos é o que você diz na taberna quando já está com umas na cabeça.",
+    "commands": [
+      {
+        "text": "Iniciar Jogo",
+        "result": "Seja bem vindo",
+        "outcome": "inicio"
+      },
+      {
+        "text": "Sair do jogo",
+        "result": "See you space cowboy...",
+        "outcome": "EXIT"
+      }      
+    ]
+  },
+  {
+    "id": "inicio",
+    "title": "O espadachim frustrado",
+    "description": "Após um dia de trabalho pesado seu maior alívio é parar na taberna local e tomar umas enquanto conta histórias fantasiosas sobre seus feitos. Todos riem e você já é tido como um grande mentiroso, mas não que você ligue, pois esse é o seu jeito de lidar com a frustração por ter fugido de casa à procura de aventura, mas ter acabado preso nessa cidade, capinando com a enxada ao invés de brandindo uma espada.",
+    "commands": [
+      {
+        "text": "Próximo",
+        "result": "",
+        "outcome": "Na Taberna"
+      }      
+    ]
+  },
+{
+    "id": "Na Taberna",
+    "title": "Um estranho se aproxima.",
+    "description": "Um velho estranho senta-se ao seu lado. Ele bate no seu ombro dolorosamente com uma bengala para chamar sua atenção e você percebe que ele parece ser uma espécie de goblin, parcamente disfarçado de humano. De maneira brusca e um tanto quanto inconveniente, ele se aproxima e sussurra ao seu ouvido: - Me dê o que eu preciso e eu realizarei seu mais profundo desejo ",
+    "commands": [
+      {
+        "text": "Pergunte o que ele precisa",
+        "result": "Vejo que o jovem tem sede de aventura..Tome isto e me encontre até à noite amanhã na floresta.",
+        "outcome": "Em casa"
+      },
+      {
+        "text": "Ofereça-lhe um gole da sua bebida.",
+        "result": "A estranha criatura responde : - Pobre homem, levado pela ebriedade e frustração...Tome isto e me encontre amanhã até à noite na floresta caso deseje uma mudança em sua vida.",
+        "outcome": "Em casa"
+      },
+      {
+        "text": "Ofereça-lhe um pedaço de pão.",
+        "result": "Isso saciará minha fome por agora, obrigado. Caso esteja faminto por uma aventura me encontre amanhã até à noite na floresta, e leve isto com você.",
+        "outcome": "Em casa"
+      }      
+    ]
+  },
+{
+    "id": "Em casa",
+    "title": "Em casa...",
+    "description": "Após a noite de bebedeira você se acorda em sua casa, de cabeça tonta e com uma fraca lembrança de ter conversado com alguém estranho.Horas depois após notar a estranha moeda em cima do criado mudo  você se lembra da estranha criatura que lhe abordou na última noite, pedindo para que levasse a moeda e o esperasse na floresta.",
+    "commands": [
+      {
+        "text": "Ir para a floresta",
+        "result": "Você se equipa com somente o necessário e parte para a floresta.",
+        "outcome": "Na Floresta"
+      },
+      {
+        "text": "Procurar uma bebida para esquecer essa provável ilusão.",
+        "result": "Você se embriaga mais uma vez fingindo que nada havia acontecido",
+        "outcome": "GAMEOVER01"
+      }      
+    ]
+  },
+{
+    "id": "GAMEOVER01",
+    "title": "Se arrependimento matasse...",
+    "description": "De cabelos brancos, mais um dia você olha para aquela moeda e imagina o que teria sido da sua vida caso não tivesse sido um covarde. Fama, fortuna , ação , perigo ? Com certeza qualquer coisa teria sido melhor que essa longa e tediosa vida...",
+    "commands": [
+      {
+        "text": "Reiniciar Jogo",
+        "result": "",
+        "outcome": "TITULO"
+      },
+      {
+        "text": "Sair do jogo",
+        "result": "See you space cowboy...",
+        "outcome": "EXIT"
+      }      
+    ]
+  },
+{
+    "id": "GAMEOVER",
+    "title": "Fim de jogo",
+    "description": "Você encontrou um fim terrível !, Deseja tentar de novo ?",
+    "commands": [
+      {
+        "text": "Reiniciar Jogo",
+        "result": "",
+        "outcome": "TITULO"
+      },
+      {
+        "text": "Sair do jogo",
+        "result": "See you space cowboy...",
+        "outcome": "EXIT"
+      }      
+    ]
+  },
+{
+    "id": "Na Floresta",
+    "title": "Na Floresta...",
+    "description": "Após horas de caminhada, chegando à floresta você se lembra de um detalhe que deixou escapar : O horário do encontro. Mesmo assim você anda até encontrar uma clareira e decide tirar uma soneca, pois algo em sua cabeça ainda zonza dizia que a criatura havia mencionado a palavra ‘noite’.Por mais algumas horas você dorme, até acordar com um barulho que parecia ser de pelo menos três pessoas conversando : Eram goblins , alguns metros à frente, contando moedas e analisando um objeto que parecia muito com sua espada. Ao perceber que seus pertences foram saqueados você se levanta e os goblins se atentam",
+    "commands": [
+      {
+        "text": "Sacar seu punhal reserva e ameaçar os goblins",
+        "result": "Eles são menores, mas são mais  e conseguem te derrubar e te matar.",
+        "outcome": "GAMEOVER"
+      },
+      {
+        "text": "Mostrar a moeda",
+        "result": "Você procura , mas parece que a moeda também foi roubada",
+        "outcome": "Na Floresta 02"
+      }      
+    ]
+  },
+{
+    "id": "Na Floresta 02",
+    "title": "Ainda na floresta...",
+    "description": "Ao perceber que você se levantou , os três goblins começam a andar na sua direção, e não pareciam ter boas intenções…\nVocê já de olhos fechados e amedrontado , escuta os três goblins discutindo com um quarto indivíduo, que quando percebe a sua presença, olha e exclama\n ‘Ah, o aventureiro!, Sabia que não ia fugir. Vamos seguir com a viagem, no meio do caminho te explico. HEY SEUS TRÊS PATETAS, DEVOLVAM OS PERTENCES DO NOSSO AVENTUREIRO!",
+    "commands": [
+      {
+        "text": "Receba seus pertences de volta, diga que te confundiram e fuja ",
+        "result": "Você diz que não é nenhum aventureiro e foge de volta para casa",
+        "outcome": "GAMEOVER01"
+      },
+      {
+        "text": "Seguir viagem",
+        "result": "Você segue viagem com o grupo",
+        "outcome": "Viagem"
+      }      
+    ]
+  },
+{
+    "id": "Viagem",
+    "title": "E a jornada começa...",
+    "description": "Perdoe-me o incoveniente. Pedi aos meus companheiros que procurassem um humano que carregasse uma moeda do nosso reino, mas acho que o conceito de procurar por alguém sem saquear essa pessoa é novo para eles. Não se preocupe, eles não representam nenhuma ameaça agora.",
+    "commands": [
+      {
+        "text": "Pergunte o nome do goblin.",
+        "result": "Ah sim, foi tanta confusão que até esqueci de me apresentar : Meu nome é Lionel",
+        "outcome": "NONE"
+      },
+      {
+        "text": "Pergunte o nome dos três goblins",
+        "result": "Styx, Stax e Stroks, responde ele",
+        "outcome": "NONE"
+      },
+	  {
+        "text": "Prosseguir.",
+        "result": "",
+        "outcome": "Viagem02"
+      }      
+    ]
+  },
+{
+    "id": "Viagem02",
+    "title": "O rei louco.",
+    "description": "Estamos caminhando em direção ao reino dos goblins., mas não se iluda pois não seremos bem recebidos. Eu costumava ser o chefe pela casa da ciência, mas após algumas desavenças entre eu e o rei , fui expulso. O caso foi que ele se envolveu com algum tipo de culto religioso e depois disso começou a implantar suas doutrinas no reino. Esses outros três também foram expulsos por não aceitar aquela religião maluca dele. Sei que muitos outros também vivem em repressão, mas tem medo do que possa acontecer caso assumam rejeitar a fé imposta.",
+    "commands": [
+      {
+        "text": "Perguntar o que você ganha ajudando eles.",
+        "result": "Ora meu rapaz não seja tão mercenário , há experiências na vida que tem valor por si só.",
+        "outcome": "Viagem03"
+      },
+      {
+        "text": "Perguntar o que eles querem com isso tudo",
+        "result": "Voltar para nosso lar e recuperar os direitos do nosso povo tirados por aquele usurpador.",
+        "outcome": "Viagem03"
+      }      
+    ]
+  },
+{
+    "id": "Viagem03",
+    "title": "Objetivos.",
+    "description": "Sem mais delongas, nosso objetivo é tirar aquele homem do trono. Te escolhi naquela taberna porque por mais que suas histórias fossem claramente mentirosas, você falava com o entusiasmo de quem realmente gostaria de tê-las vivido. Só lhe asseguro que será um desafio, com muitos riscos envolvidos. Aceita prosseguir nessa jornada ?",
+    "commands": [
+      {
+        "text": "Negar",
+        "result": "Você nega a proposta e pega o caminho de volta à sua casa.",
+        "outcome": "GAMEOVER01"
+      },
+      {
+        "text": "Aceitar",
+        "result": "Você aceita mesmo sabendo que sua vida corre risco.",
+        "outcome": "Plano"
+      }      
+    ]
+  },
+{
+ "id": "Plano",
+    "title": "Definindo um plano.",
+    "description": "Conheço cada canto daquele castelo e sei das particularidades daquele rei. Seu maior defeito é ser um acumulador compulsivo. Ele esconde todo seu ouro e jóias em um salão e vai lá quase diariamente para admirar seus pertences.Há também na sala de armas do castelo gigantescas reservas de pólvora. Podemos adentrar a cidade e nos escondermos lá, tenho contatos para isso. Então temos uma chance e duas possibilidades, o que devemos fazer ?",
+    "commands": [
+      {
+        "text": "Escavar o salão e sair com o ouro",
+        "result": "Boa escolha, podemos sair com o ouro e contratar uma companhia de mercenários para tomar o castelo.",
+        "outcome": "Plano A"
+      },
+      {
+        "text": "Escavar até o quartel e roubar a pólvora",
+        "result": "Escolha ousada, mas resolveria tudo mais rápido. Podemos armar os barris nas vigas do castelo e mandar tudo ao chão.",
+        "outcome": "Plano B"
+      }      
+    ]
+  },
+ {
+ "id": "Plano A",
+    "title": "Roubando o cofre.",
+    "description": "Após algumas semanas escondidos na casa de amigos dos goblins, vocês conseguem abrir um túnel para o salão de ouro do rei. Você é incumbido da tarefa de entrar lá e ir passando o ouro para os outros goblins no túnel. Tudo ia bem até que um grande estrondo ressoa , junto com uma vibração proveniente da abertura do gigantesco portão do salão. Nessa hora, uma pilha de ouro que se encontrava bem do lado do buraco de saída para o túnel se esparrama e acaba por encobrir a saída. Você entra em desespero enquanto um grupo de guardas adentram o salão.",
+    "commands": [
+      {
+        "text": "Tentar fugir",
+        "result": "Você tenta fugir mas acaba sendo capturado por outros guardas da entrada.",
+        "outcome": "Interrogatorio"
+      },
+      {
+        "text": "Tentar supreender os guardas",
+        "result": "Você consegue pegar um dos guardas e o sufoca, mas o outro saca o punhal e te mata.",
+        "outcome": "GAMEOVER"
+      } ,
+      {
+        "text": "Levantar e se render",
+        "result": "Você levanta e se rende.",
+        "outcome": "Interrogatorio"
+      }      
+    ]
+  },
+ {
+ "id": "Plano B",
+    "title": "Um plano explosivo.",
+    "description": "Após algumas semanas escondidos na casa de amigos dos goblins, vocês conseguem abrir um túnel para a sala de pólvora do castelo. Durante a noite, você e os três goblins entram na sala e começam a passar os barris de pólvora pelo túnel . No meio do processo você acidentalmente faz um dos barris tombar e causar um grande barulho, acordando os soldados que montavam guarda aquela noite. Você cria distrações e seus três colegas conseguem fugir, mas você fica encurralado em um canto, escutando a voz dos guardas cada vez mais perto...",
+    "commands": [
+      {
+        "text": "Tentar fugir",
+        "result": "Você tenta fugir mas acaba sendo capturado por outros guardas da entrada.",
+        "outcome": "Interrogatorio"
+      },
+      {
+        "text": "Tentar surpreender os guardas",
+        "result": "Você consegue pegar um dos guardas e o sufoca, mas o outro saca o punhal e te mata.",
+        "outcome": "GAMEOVER"
+      } ,
+      {
+        "text": "Levantar e se render",
+        "result": "Você levanta e se rende.",
+        "outcome": "Interrogatorio"
+      }      
+    ]
+  },
+ {
+ "id": "Interrogatorio",
+    "title": "Numa sala escura e fria..",
+    "description": "Você acorda com um saco na cabeça e escuta sussurros de pelo menos 4 indivíduos, um deles dizia para remover o saco da sua cabeça. O indivíduo que deu a ordem estava com roupas diferenciadas, era consideravelmente mais baixo e gordo, e usava um tipo de coroa de madeira incrustada com jóias de tamanhos irregulares. Sem dúvida o rei descrito por Sr. Lionel. O rei dirige a palavra à você : ‘ Olá meu jovem, não me lembro de ter convidado ninguém ao meu castelo, especialmente um humano, a que devo sua presença ?",
+    "commands": [
+      {
+        "text": "’Viemos retomar o reino’",
+        "result": "Retomar de quem ? Meu reinado é bem consolidado e tenho a aprovação popular",
+        "outcome": "Interrogatorio02"
+      },
+      {
+        "text": "Cuspir no rosto do rei",
+        "result": "Pensei que pudéssemos conversar, eu imagino quem te mandou aqui e sei as mentiras que te contou, mas parece que você não gostaria de ouvir. Guardas, mandem-no à masmorra",
+        "outcome": "Masmorra"
+      }
+    ]
+  },
+ {
+ "id": "Interrogatorio02",
+    "title": "Nem tudo é o que parece....",
+    "description": "O rei fica curioso com sua resposta, e antes mesmo que você dissesse mais, ele começa a falar do Sr. Lionel e o real motivo de sua expulsão do reino.'Será que ele te contou da vez em que realizou experimentos em meus soldados, e acabou com três deles mortos ? ou de quando tentou misturar porcos e cavalos em um única espécie ?, Foi por esse comportamento ultrajante que ele foi expulso de meu reino, e não é a primeira vez que ele se utiliza de aventureiros perdidos para sua causa. Não sei quais mentiras ele te contou sobre mim e meu reinado, mas tenho uma proposta : Me dê informações que me ajude a capturar esse homem sem princípios e em troca te dou parte do meu tesouro'",
+    "commands": [
+      {
+        "text": "Aceitar a proposta",
+        "result": "Sábia escolha, veremos como você pode ajudar na captura.",
+        "outcome": "Decaptacao Lionel"
+      },
+      {
+        "text": "Cuspir no rosto do rei",
+        "result": "Você parece ser um homem leal, pena que escolheu o lado errado.Guardas! À masmorra com esse homem.",
+        "outcome": "Masmorra"
+      }      
+    ]
+  },
+ {
+ "id": "Masmorra",
+    "title": "Há dias sem ver a luz do sol....",
+    "description": "Após dias preso na masmorra, você escuta um assobio vindo de fora e chega perto das grades da janela para averiguar. Era o Sr. Lionel pendurado e falando extremamente rápido sobre como ele agradecia seu sacrifício no plano e como tudo deu certo por sua causa.\nEle diz que o grande dia será amanhã e que você deveria se preparar para ser resgatado durante a madrugada. Logo após ele se joga e sai correndo , se escondendo de onde quer que tenha vindo.",
+    "commands": [
+      {
+        "text": "Esperar o resgate e deixar que o rei seja morto",
+        "result": "Você espera pacientemente durante a noite.",
+        "outcome": "Decaptacao Rei"
+      },
+      {
+        "text": "Chamar os guardas e contar sobre o ataque iminente",
+        "result": "Você chama os guardas e conta detalhes sobre o ataque iminente",
+        "outcome": "Decaptacao Lionel"
+      }      
+    ]
+  },
+{
+ "id": "Decaptacao Rei",
+    "title": "É chegado o grande dia.",
+    "description": "Após a bem sucedida execução do plano, o rei é capturado e tem como punição pela sua fortuna ilícita a decapitação em praça pública. Apesar de tudo, as pessoas não esboçam reação, não é como se odiassem o rei , e você se pergunta se realmente fez a escolha certa",
+    "commands": [
+      {
+        "text": "Pegar seus espólios e se despedir.",
+        "result": "Você se despede do Sr. Lionel e do resto do grupo e volta para sua casa.",
+        "outcome": "CasaFim"
+      }      
+    ]
+  },
+{
+ "id": "Decaptacao Lionel",
+    "title": "Uma inesperada mudança de eventos.",
+    "description": "Após o fracasso do plano, o rei manda capturar e decapitar em praça pública Sr. Lionel e todos que ajudaram no plano, exceto você. Apesar de tudo, as pessoas não esboçam reação, não é como se elas odiassem Sr. Lionel, e você se pergunta se realmente fez a escolha certa",
+    "commands": [
+       {
+        "text": "Pegar seus espólios e se despedir.",
+        "result": "Você se despede do Sr. Lionel e do resto do grupo e volta para sua casa.",
+        "outcome": "CasaFim"
+      }      
+    ]
+  },
+{
+    "id": "CasaFim",
+    "title": "Uma questão sem resposta...",
+    "description": "De cabelos brancos na sua casa, mais um dia você olha para aquela moeda e imagina o que teria sido daquelas pessoas se você fizesse outra decisão. Bem, agora já é passado e não importa, você teve uma vida confortável e aquela aventura com certeza valeu a pena",
+    "commands": [
+      {
+        "text": "Reiniciar Jogo",
+        "result": "",
+        "outcome": "TITULO"
+      },
+      {
+        "text": "Sair do jogo",
+        "result": "See you space cowboy...",
+        "outcome": "EXIT"
+      }      
+    ]
+  }
+]
+
+

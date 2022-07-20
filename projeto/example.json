@@ -1,0 +1,85 @@
+[
+  {
+    "id": "TITULO",
+    "title": "TEXTORAMA",
+    "description": "Carlos era uma pessoa comum, um desenvolvedor trabalhando na Techdine Inc. Em um dia como outro qualquer, Carlos é capturado e deixado em um local desconhecido. Ajude-o a sobreviver e desvendar esse mistério.",
+    "commands": [
+      {
+        "text": "Iniciar Jogo",
+        "result": "Seja bem vindo",
+        "nexScene": "inicio"
+      },
+      {
+        "text": "Sair do jogo",
+        "result": "Até a próxima...",
+        "nexScene": "EXIT"
+      }      
+    ]
+  },
+  {
+    "id": "inicio",
+    "titulo": "O Início",
+    "description": "Carlos abre os olhos percebe que está no chão de um quarto pequeno, com pouca iluminação. A porta parece reforçada. Há um interruptor na parede, logo a frente de Carlos. Ao lado oposto, há uma janela. Abaixo da cadeira há uma pedra.",
+    "commands": [
+      {
+        "text": "Tentar acionar o interruptor",
+        "result": "Ao se aproximador do interruptor, Carlos percebe que o chão está enfraquecido e pode ceder.",
+        "outcome": "NONE"
+      },
+      {
+        "text": "Bater na janela",
+        "result": "A janela estilhaçou e vários pedaços caíram sobre Carlos, que ficou muito ferido e não sobreviveu.",
+        "outcome": "GAMEOVER"
+      },
+      {
+        "text": "Forçar a porta",
+        "result": "A porta está bem fechada e reforçada, mas as dobradiças parecem enferrujadas.",
+        "outcome": "NONE"
+      },
+      {
+        "text": "Pegar pedra",
+        "result": "Carlos pegou a pedra e vê algumas novas possibilidades.",
+        "outcome": "cena02"
+      }
+    ]
+  },
+  {
+    "id": "cena02",
+    "titulo": "Ainda início, mas com um equipamento...",
+    "description": "Com a pedra em mãos, Carlos percebe que consegue utilizá-la como instrumento. A porta parece reforçada. Há um interruptor na parede, logo a frente de Carlos. Ao lado oposto, há uma janela. Abaixo da cadeira há uma pedra.",
+    "commands": [
+      {
+        "text": "Bater nas dobradiças da porta",
+        "result": "A porta cedeu e caiu sobre Carlos, que ficou preso e morreu de fome.",
+        "nexScene": "GAMEOVER"
+      },
+      {
+        "text": "Atirar a pedra no interruptor",
+        "result": "Carlos acerta o interruptor com a pedra. A porta abre e Carlos passa por ela.",
+        "nexScene": "GAMEOVER"
+      },
+      {
+        "text": "Atirar a pedra na janela.",
+        "result": "A janela quebrou e Carlos pode passar por ela.",
+        "nexScene": "GAMEOVER"
+      }      
+    ]
+  },
+  {
+    "id": "GAMEOVER",
+    "titulo": "Fim de jogo",
+    "description": "Snake! Talk to me! Snake! SNAAAAKE!!!",
+    "commands": [
+      {
+        "text": "Reiniciar Jogo",
+        "result": "Que a força esteja convosco!",
+        "nexScene": "TITULO"
+      },
+      {
+        "text": "Sair do jogo",
+        "result": "Até a próxima...",
+        "nexScene": "EXIT"
+      }      
+    ]
+  }  
+]

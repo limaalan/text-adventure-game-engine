@@ -1,0 +1,84 @@
+digraph g {
+graph [rankdir="LR"];
+/*******CENAS********/
+"TITULO" [
+label = "<f0>ID:TITULO|<f1>Bem vindo à text adventure 'Aventuras com goblins'|<f2>2-Iniciar Jogo|<f3>3-Sair do jogo"
+shape =  "record"
+];
+"inicio" [
+label = "<f0>ID:inicio|<f1>O espadachim frustrado|<f2>2-Próximo"
+shape =  "record"
+];
+"Na Taberna" [
+label = "<f0>ID:Na Taberna|<f1>Um estranho se aproxima.|<f2>2-Pergunte o que ele precisa|<f3>3-Ofereça-lhe um gole da sua bebida.|<f4>4-Ofereça-lhe um pedaço de pão."
+shape =  "record"
+];
+"Em casa" [
+label = "<f0>ID:Em casa|<f1>Em casa...|<f2>2-Ir para a floresta|<f3>3-Procurar uma bebida para esquecer essa provável ilusão."
+shape =  "record"
+];
+"GAMEOVER01" [
+label = "<f0>ID:GAMEOVER01|<f1>Se arrependimento matasse...|<f2>2-Reiniciar Jogo|<f3>3-Sair do jogo"
+shape =  "record"
+];
+"GAMEOVER" [
+label = "<f0>ID:GAMEOVER|<f1>Fim de jogo|<f2>2-Reiniciar Jogo|<f3>3-Sair do jogo"
+shape =  "record"
+];
+"Na Floresta" [
+label = "<f0>ID:Na Floresta|<f1>Na Floresta...|<f2>2-Sacar seu punhal reserva e ameaçar os goblins|<f3>3-Mostrar a moeda"
+shape =  "record"
+];
+"Na Floresta 02" [
+label = "<f0>ID:Na Floresta 02|<f1>Ainda na floresta...|<f2>2-Receba seus pertences de volta, diga que te confundiram e fuja |<f3>3-Seguir viagem"
+shape =  "record"
+];
+"Viagem" [
+label = "<f0>ID:Viagem|<f1>E a jornada começa...|<f2>2-Pergunte o nome do goblin.|<f3>3-Pergunte o nome dos três goblins|<f4>4-Prosseguir."
+shape =  "record"
+];
+"Viagem02" [
+label = "<f0>ID:Viagem02|<f1>O rei louco.|<f2>2-Perguntar o que você ganha ajudando eles.|<f3>3-Perguntar o que eles querem com isso tudo"
+shape =  "record"
+];
+"Viagem03" [
+label = "<f0>ID:Viagem03|<f1>Objetivos.|<f2>2-Negar|<f3>3-Aceitar"
+shape =  "record"
+];
+"Plano" [
+label = "<f0>ID:Plano|<f1>Definindo um plano.|<f2>2-Escavar o salão e sair com o ouro|<f3>3-Escavar até o quartel e roubar a pólvora"
+shape =  "record"
+];
+"Plano A" [
+label = "<f0>ID:Plano A|<f1>Roubando o cofre.|<f2>2-Tentar fugir|<f3>3-Tentar supreender os guardas|<f4>4-Levantar e se render"
+shape =  "record"
+];
+"Plano B" [
+label = "<f0>ID:Plano B|<f1>Um plano explosivo.|<f2>2-Tentar fugir|<f3>3-Tentar surpreender os guardas|<f4>4-Levantar e se render"
+shape =  "record"
+];
+"Interrogatorio" [
+label = "<f0>ID:Interrogatorio|<f1>Numa sala escura e fria..|<f2>2-’Viemos retomar o reino’|<f3>3-Cuspir no rosto do rei"
+shape =  "record"
+];
+"Interrogatorio02" [
+label = "<f0>ID:Interrogatorio02|<f1>Nem tudo é o que parece....|<f2>2-Aceitar a proposta|<f3>3-Cuspir no rosto do rei"
+shape =  "record"
+];
+"Masmorra" [
+label = "<f0>ID:Masmorra|<f1>Há dias sem ver a luz do sol....|<f2>2-Esperar o resgate e deixar que o rei seja morto|<f3>3-Chamar os guardas e contar sobre o ataque iminente"
+shape =  "record"
+];
+"Decaptacao Rei" [
+label = "<f0>ID:Decaptacao Rei|<f1>É chegado o grande dia.|<f2>2-Pegar seus espólios e se despedir."
+shape =  "record"
+];
+"Decaptacao Lionel" [
+label = "<f0>ID:Decaptacao Lionel|<f1>Uma inesperada mudança de eventos.|<f2>2-Pegar seus espólios e se despedir."
+shape =  "record"
+];
+"CasaFim" [
+label = "<f0>ID:CasaFim|<f1>Uma questão sem resposta...|<f2>2-Reiniciar Jogo|<f3>3-Sair do jogo"
+shape =  "record"
+];
+"TITULO":f2 -> "inicio":f0"TITULO":f3 -> "EXIT":f0"inicio":f2 -> "Na Taberna":f0"Na Taberna":f2 -> "Em casa":f0"Na Taberna":f3 -> "Em casa":f0"Na Taberna":f4 -> "Em casa":f0"Em casa":f2 -> "Na Floresta":f0"Em casa":f3 -> "GAMEOVER01":f0"GAMEOVER01":f2 -> "TITULO":f0"GAMEOVER01":f3 -> "EXIT":f0"GAMEOVER":f2 -> "TITULO":f0"GAMEOVER":f3 -> "EXIT":f0"Na Floresta":f2 -> "GAMEOVER":f0"Na Floresta":f3 -> "Na Floresta 02":f0"Na Floresta 02":f2 -> "GAMEOVER01":f0"Na Floresta 02":f3 -> "Viagem":f0"Viagem":f2 -> "NONE":f0"Viagem":f3 -> "NONE":f0"Viagem":f4 -> "Viagem02":f0"Viagem02":f2 -> "Viagem03":f0"Viagem02":f3 -> "Viagem03":f0"Viagem03":f2 -> "GAMEOVER01":f0"Viagem03":f3 -> "Plano":f0"Plano":f2 -> "Plano A":f0"Plano":f3 -> "Plano B":f0"Plano A":f2 -> "Interrogatorio":f0"Plano A":f3 -> "GAMEOVER":f0"Plano A":f4 -> "Interrogatorio":f0"Plano B":f2 -> "Interrogatorio":f0"Plano B":f3 -> "GAMEOVER":f0"Plano B":f4 -> "Interrogatorio":f0"Interrogatorio":f2 -> "Interrogatorio02":f0"Interrogatorio":f3 -> "Masmorra":f0"Interrogatorio02":f2 -> "Decaptacao Lionel":f0"Interrogatorio02":f3 -> "Masmorra":f0"Masmorra":f2 -> "Decaptacao Rei":f0"Masmorra":f3 -> "Decaptacao Lionel":f0"Decaptacao Rei":f2 -> "CasaFim":f0"Decaptacao Lionel":f2 -> "CasaFim":f0"CasaFim":f2 -> "TITULO":f0"CasaFim":f3 -> "EXIT":f0}
